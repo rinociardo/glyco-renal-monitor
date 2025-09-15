@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/glyco-renal-monitor/',
   plugins: [vue(), VitePWA({
     registerType: 'autoUpdate',
     includeAssets: ['vite.svg'],
