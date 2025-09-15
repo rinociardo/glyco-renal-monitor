@@ -1,0 +1,27 @@
+{
+  "name": "glyco-renal-motor-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.0",
+    "dexie": "^4.2.0",
+    "pinia": "^3.0.3",
+    "vue": "^3.5.18",
+    "vue-chartjs": "^5.3.2",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.1.2",
+    "vite-plugin-pwa": "^1.0.3",
+    "vue-tsc": "^3.0.5"
+  }
+}

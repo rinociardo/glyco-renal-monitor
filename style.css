@@ -1,0 +1,300 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.4em;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+small {
+  display: block;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 0.25rem;
+}
+
+.option-group {
+  border: 1px solid #ddd; /* Light border around the whole group */
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #fefefe;
+}
+
+.option-group h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 per row */
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox-item input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid #999;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+.checkbox-item input[type="checkbox"]:checked {
+  border-color: #0077cc;
+  background-color: transparent;
+  position: relative;
+}
+.checkbox-item input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 4px;
+  height: 8px;
+  border: solid #0077cc;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+.checkbox-item:hover {
+  background-color: #eef;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333; /* or your preferred text color */
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+:root {
+  color: #213547;
+  background-color: #ffffff;
+}
+
+a:hover {
+  color: #747bff;
+}
+
+/* ✅ Global button reset and base style */
+button,
+.btn-save,
+.btn-cancel {
+  all: unset !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.6rem 1.4rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+  background-color: #d3d3d3 !important;
+  border: 1px solid #999 !important;
+  border-radius: 8px !important;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2) !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3.5rem; /* ✅ Horizontal spacing between buttons */
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Optional: add margin to individual buttons if gap fails */
+.form-actions button {
+  margin-left: 1rem;
+}
+
+/* Prevent last button from adding extra margin */
+.form-actions button:last-child {
+  margin-left: 0;
+}
+
+
+/* ✅ Button container layout */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right !important;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ✅ SALVA button */
+.btn-save {
+  background-color: #d3d3d3;
+  border: 1px solid #999;
+  color: #333;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn-save::before {
+  content: "💾";
+  font-size: 1.2rem;
+}
+
+.btn-save:hover {
+  background-color: #c0c0c0;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+
+.btn-save:active {
+  transform: translateY(1px);
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.btn-save:disabled {
+  background-color: #eee;
+  border-color: #ccc;
+  color: #aaa;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* ✅ Cancel button */
+.btn-cancel {
+  background-color: #f9f9f9;
+  border: 1px solid #bbb;
+  color: #555;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.btn-cancel::before {
+  content: "❌";
+  font-size: 1.2rem;
+}
+
+.btn-cancel:hover {
+  background-color: #c0c0c0;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+
+.btn-cancel:active {
+  transform: translateY(1px);
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+}
+.filter-controls {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+select {
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
