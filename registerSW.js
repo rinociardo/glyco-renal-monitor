@@ -1,1 +1,0 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/glyco-renal-monitor/sw.js', { scope: '/glyco-renal-monitor/' })})}
