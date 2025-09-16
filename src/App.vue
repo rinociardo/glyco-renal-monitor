@@ -3,7 +3,7 @@
     <header>
       <h1>🧠 Dashboard per il Monitoraggio Dati di Glicemia e Funzione Renale</h1>
       <nav>
-        <RouterLink to="/dashboard">📊 Storico dati Immessi</RouterLink>
+        <RouterLink to="/dashboard">📊 Storico Dati Immessi</RouterLink>
         <RouterLink to="/audit-log">📜 Registro Diagnostica</RouterLink>
         <RouterLink to="/new-entry">➕ Immissione Nuovi Dati</RouterLink>
       </nav>
