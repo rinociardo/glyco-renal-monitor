@@ -1,11 +1,11 @@
 <template>
   <div class="app">
     <header>
-      <h1>🧠 GlycoRenal Dashboard</h1>
+      <h1>🧠 Dashboard per il Monitoraggio Dati di Glicemia e Funzione Renale</h1>
       <nav>
-        <RouterLink to="/dashboard">📊 Dashboard</RouterLink>
-        <RouterLink to="/audit-log">📜 Audit Log</RouterLink>
-        <RouterLink to="/new-entry">➕ New Entry</RouterLink>
+        <RouterLink to="/dashboard">📊 Storico dati Immessi</RouterLink>
+        <RouterLink to="/audit-log">📜 Registro Diagnostica</RouterLink>
+        <RouterLink to="/new-entry">➕ Immissione Nuovi Dati</RouterLink>
       </nav>
     </header>
 
