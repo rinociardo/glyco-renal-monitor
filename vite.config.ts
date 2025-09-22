@@ -10,7 +10,8 @@ export default defineConfig({
     manifest: {
       name: 'Glucosio Renal Monitor',
       short_name: 'GlucosioMonitor',
-      start_url: '/',
+      start_url: '/glyco-renal-monitor',
+      scope: '/glyco-renal-monitor/',
       description: 'Una App per monitorare glucosio e i parametri di funzionalità renale',
       background_color: '#ffffff',
       theme_color: '#d3d3d3',
