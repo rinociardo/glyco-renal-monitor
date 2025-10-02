@@ -1,18 +1,35 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import DashboardView from '../views/DashboardView.vue'
-import AuditLogViewer from '../views/AuditLogViewer.vue'
-import NewEntryForm from '../views/NewEntryForm.vue' // ✅ Add this
 
-const routes = [
-  { path: '/', redirect: '/dashboard' },
-  { path: '/dashboard', component: DashboardView },
-  { path: '/audit-log', component: AuditLogViewer },
-  { path: '/new-entry', component: NewEntryForm } // ✅ Add this
-]
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes
+  history: createWebHistory('/glyco-renal-monitor/'),
+  routes: [
+    {
+      path: '/',
+      name: 'Dashboard',
+      component: () => import('../views/DashboardView.vue')
+    },
+    {
+      path: '/dashboard',
+      name: 'DashboardAlias',
+      component: () => import('../views/DashboardView.vue')
+    },
+    {
+      path: '/audit-log',
+      name: 'AuditLog',
+      component: () => import('../views/AuditLogViewer.vue')
+    },
+    {
+      path: '/new-entry',
+      name: 'NewEntry',
+      component: () => import('../views/NewEntryForm.vue')
+    },
+    {
+      path: '/lifestyle',
+      name: 'Lifestyle',
+      component: () => import('../views/Lifestyle.vue')
+    }
+  ]
 })
 
 export default router

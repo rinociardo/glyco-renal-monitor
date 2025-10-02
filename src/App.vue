@@ -6,6 +6,7 @@
         <RouterLink to="/dashboard">📊 Storico Dati Immessi</RouterLink>
         <RouterLink to="/audit-log">📜 Registro Diagnostica</RouterLink>
         <RouterLink to="/new-entry">➕ Immissione Nuovi Dati</RouterLink>
+        <RouterLink to="/lifestyle">🧠 Analisi Stile di Vita</RouterLink>
       </nav>
     </header>
 
